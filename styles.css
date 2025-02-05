@@ -26,14 +26,15 @@ canvas {
 
 /* ヘッダー */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #8bdda8;
-    position: relative;
-    top: 0; /* ヘッダーの位置を固定 */
-    z-index: 1;
+    background-image: url(https://drive.google.com/file/d/1AoQWTYJANnoTtZeIGDMFijRfHm4dmYrv/view); 
+    background-size: cover;  /* 画像がヘッダーにフィットするように調整 */
+    background-position: center;  /* 画像を中央に配置 */
+    padding: 40px;  /* ヘッダーの内側の余白を増やして大きく見せる */
+    color: white;  /* 白い文字に設定 */
+    height: 800px;  /* ヘッダーの高さを大きく設定 */
+    display: flex;  /* Flexboxを使ってコンテンツを中央に配置 */
+    justify-content: center;  /* 横方向に中央に配置 */
+    align-items: center;  /* 縦方向に中央に配置 */
 }
 
 
