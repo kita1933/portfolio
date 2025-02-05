@@ -63,20 +63,6 @@ function animateParticles() {
 }
 animateParticles();
 
-// ライトボックス
-const images = document.querySelectorAll('.portfolio-media');
-const lightbox = document.getElementById('lightbox');
-const lightboxImage = document.getElementById('lightbox-image');
-const closeBtn = document.getElementById('close-btn');
-
-images.forEach(img => {
-    img.addEventListener('click', () => {
-        lightbox.style.display = 'flex';
-        lightboxImage.src = img.src;
-        lightboxImage.style.opacity = 0;  // 初期状態で透明
-        setTimeout(() => lightboxImage.style.opacity = 1, 50);  // フェードイン
-    });
-});
 
 closeBtn.addEventListener('click', () => {
     lightbox.style.display = 'none';
