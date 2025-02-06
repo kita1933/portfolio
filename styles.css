@@ -26,7 +26,7 @@ canvas {
 
 /* ヘッダー */
 header {
-    background-image: url("C:\Users\wwshi\Desktop\saito\top.jpg"); 
+    background-image: url<iframe src="https://drive.google.com/file/d/1pcvFuj9DXBM40lBrObZk3wZYO4Bs8IZA/preview" width="640" height="480"></iframe>
     background-size: cover;  /* 画像がヘッダーにフィットするように調整 */
     background-position: center;  /* 画像を中央に配置 */
     padding: 40px;  /* ヘッダーの内側の余白を増やして大きく見せる */
