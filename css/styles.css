@@ -71,6 +71,16 @@ header nav ul li a:hover {
 }
 
 /* ポートフォリオセクション */
+h2 {
+    display: block;
+    font-size: 5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 .portfolio-section {
   padding: 50px;
 }
@@ -331,7 +341,7 @@ video {
   display: inline-block;
   font-size: 1.5em;
   font-weight: bold;
-  padding: 15px 200px;
+  padding: 35px 80px;
   background: linear-gradient(135deg, #a8c0ff, #d9e4ff); /* 淡い青のグラデーション */
   color: #ffffff;
   text-decoration: none;
