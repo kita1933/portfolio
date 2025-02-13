@@ -299,3 +299,139 @@ video {
   height: 100%;
   border-radius: 10px;
 }
+/* もっと見るボタン */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#loadMoreBtn {
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #a8c0ff, #d9e4ff); /* 淡い青のグラデーション */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px; /* 丸みのあるデザイン */
+  box-shadow: 0 4px 15px rgba(160, 200, 255, 0.3);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* もっと見るボタン */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#loadMoreBtn {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 14px 35px;
+  background: linear-gradient(135deg, #a8c0ff, #d9e4ff); /* 淡い青のグラデーション */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px; /* 丸みのあるデザイン */
+  box-shadow: 0 6px 20px rgba(160, 200, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+  transform-style: preserve-3d;
+}
+
+/* ホバー時に3D浮き上がりエフェクト */
+#loadMoreBtn:hover {
+  background: linear-gradient(135deg, #88b0ff, #bcd4ff); /* 少し濃い青 */
+  box-shadow: 0 10px 30px rgba(100, 160, 255, 0.5);
+  transform: translateY(-5px) rotateX(10deg) rotateY(5deg); /* 立体感 */
+}
+
+/* クリック時の波紋エフェクト */
+#loadMoreBtn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: width 0.6s ease, height 0.6s ease, opacity 0.4s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+}
+
+#loadMoreBtn:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+/* クリック時の小さなスケールアニメーション */
+#loadMoreBtn:active {
+  transform: scale(0.95);
+}
+
+/* 波紋アニメーション */
+.ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+#loadMoreBtn:active .ripple {
+  transform: scale(4);
+  opacity: 1;
+}
+
+/* 光のラインアニメーション */
+#loadMoreBtn span {
+  position: relative;
+  z-index: 2;
+}
+
+#loadMoreBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+}
+
+#loadMoreBtn:hover::after {
+  left: 100%;
+}
+
+/* 波打つアニメーション */
+@keyframes wave {
+  0% {
+    border-radius: 50px;
+  }
+  50% {
+    border-radius: 30px;
+  }
+  100% {
+    border-radius: 50px;
+  }
+}
+
+#loadMoreBtn:hover {
+  animation: wave 1.2s infinite alternate ease-in-out;
+}
