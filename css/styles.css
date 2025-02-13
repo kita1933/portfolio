@@ -62,7 +62,7 @@ header nav ul li a {
   font-size: 1.5em;
   color: #ffffff;
   transition: color 0.3s ease;
-  padding: 30px 20px;
+  padding: 10px 20px;
   display: inline-block;
 }
 
@@ -91,7 +91,7 @@ header nav ul li a:hover {
   max-width: 800px;
   height: auto;
   min-height: 400px;
-  background: #ffffff;
+  background: #D9E6DF;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -219,7 +219,7 @@ video {
   }
 
   header .logo h1 {
-    margin-top: 20px; /* ロゴの位置調整 */
+    margin-top: 10px; /* ロゴの位置調整 */
   }
 }
 
@@ -324,14 +324,14 @@ video {
 /* もっと見るボタン */
 .button-container {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 #loadMoreBtn {
   display: inline-block;
   font-size: 1.5em;
   font-weight: bold;
-  padding: 14px 35px;
+  padding: 15px 200px;
   background: linear-gradient(135deg, #a8c0ff, #d9e4ff); /* 淡い青のグラデーション */
   color: #ffffff;
   text-decoration: none;
