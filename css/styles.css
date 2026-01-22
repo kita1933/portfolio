@@ -54,7 +54,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: -10px 20px;
+  margin: -20px 20px;
 }
 
 header nav ul li a {
@@ -67,7 +67,16 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #8bdda8;
+  color: #FFFFFF;
+}
+/* パートナーシップのテキストスタイル */
+.partnership {
+  margin-top:60px;      /* ナビとの間隔：数値を大きくするとより離れます */
+  font-size: 1.25rem;    /* 文字の大きさ：標準より一回り大きく */
+  font-weight: bold;     /* 太字にして存在感を出す */
+  letter-spacing: 0.05em; /* 文字の間隔を少し広げて読みやすく */
+  color: #FFFFFF;           /* 文字色（背景が暗い場合は #fff 等に変更してください） */
+  text-align: center;
 }
 
 /* ポートフォリオセクション */
